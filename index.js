@@ -2,7 +2,7 @@ const cp = require('child_process');
 const pMap = require('p-map');
 
 async function callGit(cwd, command, idx) {
-  idx = idx + ' '.repeat(idx * 2);
+  idx = (idx.toString().padStart(2)) + ' '.repeat(idx * 2);
 
   console.log(idx, '1e');
 
